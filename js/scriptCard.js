@@ -1,7 +1,7 @@
 window.addEventListener("load", ()=>{ 
 
-    const senderParams = new URLSearchParams(window.location.search).get('sender')
-    const receiverParams = new URLSearchParams(window.location.search).get('receiver')
+    const senderParams = sessionStorage.getItem('cardSender')
+    const receiverParams = sessionStorage.getItem('cardReceiver')
 
 
     const titleReceiver = document.getElementById("titleReceiver")
@@ -11,3 +11,4 @@ window.addEventListener("load", ()=>{
     txtSender.innerText = `${senderParams.toLocaleUpperCase()}`
 
 })
+
