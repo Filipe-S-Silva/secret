@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="public/cardIcon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Um Convite Especial</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Playfair para o corpo da carta e Montserrat para o pedido (máxima legibilidade) */
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+
+      .font-letter {
+        font-family: "Playfair Display", serif;
+      }
+
+      .font-request {
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: 0.5px;
+      }
+
+      /* Sombreamento suave para parecer que a carta está sobre o fundo */
+      .paper-shadow {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-[#fae1dd] flex items-center justify-center px-4 py-10">
+    
+    <main
+      class="relative bg-white w-full max-w-2xl px-8 sm:px-12 md:px-20 py-12 md:py-16 rounded-lg paper-shadow font-letter border-t-8 border-[#f08080]"
+    >
+      
+      <div class="absolute top-8 right-10 opacity-30">
+         <svg width="35" height="35" viewBox="0 0 24 24" fill="#f4978e">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+         </svg>
+      </div>
+
+      <article class="text-[#003049] leading-relaxed space-y-10">
+        <header>
+            <p id="titleReceiver" class="font-bold text-3xl mb-2"></p>
+            <div class="h-1.5 w-16 bg-[#fda996] rounded-full"></div>
+        </header>
+
+        <p class="text-xl opacity-90">
+          Venho, através desta humilde e respeitável carta, lhe ofertar um singelo pedido:
+        </p>
+        
+        <div class="py-6 border-y border-[#fae1dd]">
+            <p class="font-request text-center text-3xl sm:text-4xl text-[#f08080] uppercase tracking-wider">
+                Que tal sairmos?
+            </p>
+        </div>
+
+      </article>
+
+      <div class="mt-20 text-right">
+        <p class="italic text-2xl text-[#003049]/70" id="txtSender"></p>
+      </div>
+
+      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+          <span class="w-2 h-2 rounded-full bg-[#f4978e]"></span>
+          <span class="w-2 h-2 rounded-full bg-[#fda996]"></span>
+          <span class="w-2 h-2 rounded-full bg-[#fae1dd]"></span>
+      </div>
+    </main>
+
+    <script src="../js/scriptCard.js"></script>
+  </body>
+</html>

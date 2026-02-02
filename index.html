@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="public/cardIcon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card</title>
+
+  <link rel="stylesheet" href="css/card.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="overflow-hidden">
+
+  <main
+    class="min-h-screen w-full
+           bg-red-700/85
+           flex items-center justify-center
+           px-4">
+    
+    <div class="wrapper">
+      <div class="shadow"></div>
+
+      <div class="envelope">
+        <div class="letter">
+          <p id="receiver"></p>
+        </div>
+
+        <div class="envelope-front"></div>
+        <div class="lid"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
