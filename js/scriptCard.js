@@ -7,7 +7,7 @@ window.addEventListener("load", ()=>{
     const titleReceiver = document.getElementById("titleReceiver")
     const txtSender = document.getElementById("txtSender")
 
-    titleReceiver.innerText = `Querida ${receiverParams.toLocaleUpperCase()},`
+    titleReceiver.innerText = `Querida(o) ${receiverParams.toLocaleUpperCase()},`
     txtSender.innerText = `${senderParams.toLocaleUpperCase()}`
 
 })
